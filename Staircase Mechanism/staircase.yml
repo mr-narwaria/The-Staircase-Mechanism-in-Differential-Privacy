@@ -1,0 +1,63 @@
+project_name: Staircase Mechanism in Differential Privacy
+
+description: The staircase mechanism is being explored as a noise-adding alternative for differential privacy, 
+             aiming to improve performance in medium and low privacy regimes.
+
+dependencies:
+  - virtualenv
+  - pandas
+  - matplotlib
+  - diffprivlib
+
+how_to_run:
+  create_virtual_env:
+    description: Create a virtual environment for package installation
+    steps:
+      - Go to the main directory of your project
+      - Create a virtual environment using virtualenv package
+        ```bash
+        virtualenv venv
+        ```
+      - Activate Virtual Environment
+        # for the Windows
+        ```bash
+        venv\Scripts\activate     # Windows
+        ```
+        # for the Unix/Linux
+        ```bash
+        source venv/bin/activate  # Unix/Linux
+        ```
+
+  install_dependencies:
+    description: Install required dependencies
+    steps:
+      - Install pandas
+        ```bash
+        pip install pandas
+        ```
+      - Install matplotlib
+        ```bash
+        pip install matplotlib
+        ```
+      - Install diffprivlib
+        ```bash
+        pip install diffprivlib
+        ```
+
+  compare_mechanisms:
+    description: Compare Laplace and Staircase Mechanisms
+    steps:
+      - Install project dependencies
+      - Run comparison script
+        ```bash
+        python compare.py
+        ```
+
+  accuracy_analysis:
+    description: Analyze accuracy of Laplace and Staircase Mechanisms
+    steps:
+      - Install project dependencies
+      - Run accuracy analysis script
+        ```bash
+        python accuracy.py
+        ```
